@@ -1,0 +1,10 @@
+#!/usr/bin/env lua
+local j = require("cjson")
+local spr = require('serpent')
+local ok, res = spr.load(io.stdin:read("*a"))
+if not ok then
+	os.exit(1)
+end
+print(j.encode(res))
+
+-- vim: set ft=lua ai sw=2 ts=2 :

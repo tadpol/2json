@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+require 'YAML'
+require 'JSON'
+puts JSON.parse(ARGF.read).to_yaml
+#  vim: set sw=4 ts=4 :

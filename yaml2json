@@ -1,0 +1,5 @@
+#!/usr/bin/ruby
+require 'YAML'
+require 'JSON'
+puts JSON.generate(YAML.load(ARGF))
+#  vim: set sw=4 ts=4 :

@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+const getStdin = require('get-stdin')
+const util = require('util')
+
+getStdin().then(str => {
+  ob = JSON.parse(str)
+  console.log(util.inspect(ob, {showHidden: false, depth: null}))
+})
+
+//  vim: set ft=javascript sw=2 ts=2 :

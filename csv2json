@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+require 'csv' # This gem needs to have been installed globally.
+require 'JSON'
+puts JSON.generate(CSV.parse(ARGF.read))
+#  vim: set sw=4 ts=4 :

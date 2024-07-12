@@ -8,7 +8,9 @@ luarocks install serpent
 ```
 
 # Ruby
-All builtin
+```
+gem install csv
+```
 
 # Javascript
 ```

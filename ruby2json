@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'json'
+puts JSON.generate(eval(ARGF.read))
+#  vim: set ft=ruby sw=2 ts=2 :

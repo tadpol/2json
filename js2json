@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+const vm = require('vm')
+const getStdin = require('get-stdin')
+getStdin().then(str => {
+  dfg = {}
+  vm.runInNewContext('dfg = ' + str, dfg)
+  console.log(JSON.stringify(dfg.dfg))
+})
+
+//  vim: set ft=javascript sw=2 ts=2 :

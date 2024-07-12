@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+require 'json'
+require 'pp'
+
+pp JSON.parse(ARGF.read)
+
+#  vim: set ft=ruby sw=2 ts=2 :
